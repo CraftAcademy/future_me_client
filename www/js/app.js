@@ -35,10 +35,10 @@ angular.module('future_me', ['ionic', 'future_me.controllers', 'ionic.contrib.ui
 
     .state('description', {
       url: '/description',
-      templateUrl: 'templates/description/description.html',
+      templateUrl: 'templates/description.html',
       controller: 'DescriptionController'
     });
 
-    $urlRouterProvider.otherwise('description');
+    $urlRouterProvider.otherwise('suggestions');
 
   });

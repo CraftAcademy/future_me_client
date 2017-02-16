@@ -9,5 +9,5 @@ angular.module('future_me.controllers', [])
   })
 
   .controller('DescriptionController', function() {
-    console.log('description controller');
+
   });
