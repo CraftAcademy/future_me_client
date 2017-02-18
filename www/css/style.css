@@ -262,3 +262,30 @@ td-card img {
   margin-top: 8rem;
   text-align: center;
 }
+
+/*Libary screen*/
+
+.screen {
+  overflow: hidden;
+  background-size: cover;
+}
+
+.row-lib {
+  padding-top: 70px;
+  padding-left: 45px;
+}
+
+.button-light {
+  height: 80px;
+  width: 150px;
+  margin-right: 40px;
+  background-size: cover;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.button.button-light {
+  color: #fff;
+}
+
+
