@@ -1,43 +1,56 @@
-<ion-view title="Description">
-  <ion-content scroll="false" class="pane" style="background-image: url('img/Bagare.png');">
-    <ion-header-bar class='bar-clear'>
-      <div class="buttons">
-        <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack()"></a>
-      </div>
-      <h1 class="title">Occupation Header</h1>
-    </ion-header-bar>
-    <div>
-      <div class="col-80">Det här gör en "Whatever"</div>
-    </div>
-    <div class="row top-space">
-      <div class="col-90">
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aliquid asperiores autem cupiditate,
-          ex fugiat illum in ipsam minima odio optio ratione reiciendis tempore totam vel veniam voluptas voluptate.
+<ion-pane ng-controller="cardsCtrl" class="background-grey">
+  <div ng-if="cards.active">
+    <td-cards>
+      <td-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)">
+        <ion-header-bar class='bar-clear'>
+          <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-back" ng-click="myGoBack(card.id)"></a>
+          </div>
+          <h1 class="title">Occupation Header</h1>
+        </ion-header-bar>
+        <div class="row card-image" style="background-image: url('img/{{card.image}}');" ng-controller="cardCtrl">
+          <div class="col">
+            <div>
+              <div class="col-80">Det här gör en "Whatever"</div>
+            </div>
+            <div class="row top-space">
+              <div class="col-90">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aliquid asperiores autem cupiditate,
+                  ex fugiat illum in ipsam minima odio optio ratione reiciendis tempore totam vel veniam voluptas voluptate.
+                </div>
+                <div>Animi debitis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro     praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
+                  ?
+                </div>
+              </div>
+            </div>
+            <div class="row top-space">
+              <button class="button button-dark">
+                Läs mer
+              </button>
+            </div>
+          </div>
         </div>
-        <div>Animi debitis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro     praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?itis dolore dolorem ex excepturi fugiat ipsam minima necessitatibus neque non porro praesentium
-          ?
+        <div class="row">
+          <div class="col button-group">
+            <button class="button button-assertive icon ion-close" ng-click="onClickTransitionOut(card)"></button>
+            <button class="button button-royal icon ion-map" go-click="/path"></button>
+            <button class="button button-positive icon ion-information" go-click="/description"></button>
+            <button class="button button-balanced icon ion-heart"></button>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row top-space">
-      <button class="button button-dark">
-        Läs mer
-      </button>
-    </div>
-    <div class="row top-space">
-      <div class="col button-group_description">
-        <button class="button button-assertive icon ion-close"></button>
-        <button class="button button-royal icon ion-map" go-click="/path"></button>
-        <button class="button button-balanced icon ion-heart"></button>
-      </div>
-    </div>
-  </ion-content>
-</ion-view>
+      </td-card>
+      <td-card>
+        <div class="row refresh-card">
+        </div>
+      </td-card>
+    </td-cards>
+  </div>
+</ion-pane>

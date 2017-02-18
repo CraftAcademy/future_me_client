@@ -2,7 +2,7 @@ angular.module("futureme.services", [])
 
 .factory ('StorageService', function ($localStorage) {
   $localStorage = $localStorage.$default({
-    things: [
+    occupations: [
       {
         id: 1,
         title: "bagare",
@@ -35,13 +35,13 @@ angular.module("futureme.services", [])
   });
 
   var _getAll = function () {
-    return $localStorage.things;
+    return $localStorage.occupations;
   };
-  var _add = function (thing) {
-    $localStorage.things.push(thing);
+  var _add = function (occupation) {
+    $localStorage.occupations.push(occupation);
   };
-  var _remove = function (thing) {
-    $localStorage.things.splice($localStorage.things.indexOf(thing), 1);
+  var _remove = function (occupation) {
+    $localStorage.occupations.splice($localStorage.occupations.indexOf(occupation), 1);
   };
   return {
     getAll: _getAll,
