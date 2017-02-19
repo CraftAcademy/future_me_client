@@ -34,7 +34,26 @@ angular.module("futureme.services", [])
     ]
   });
 
+  var _master = function () {
+    return $localStorage.occupations;
+  };
+  var _active = function (array) {
+    console.log("passed in array: " + array);
+    var active = Array.prototype.slice.call($localStorage.occupations, 0);
+    if (array != null) {
+      active = array;
+      // active = [];
+      // for (var i; i < array.length; i++) {
+      //   active[i] = array[i];
+      // }
+    }
+    console.log("factory active: " + active);
+    return active;
+  };
   var _getAll = function () {
+    return $localStorage.occupations;
+  };
+  var _getAnOccupation = function () {
     return $localStorage.occupations;
   };
   var _add = function (occupation) {
@@ -46,6 +65,8 @@ angular.module("futureme.services", [])
   return {
     getAll: _getAll,
     add: _add,
-    remove: _remove
+    remove: _remove,
+    master: _master,
+    active: _active
   };
 });

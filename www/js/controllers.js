@@ -2,17 +2,24 @@ angular.module('futureme.controllers', [])
 
   .controller('cardsCtrl', function ($scope, TDCardDelegate, $timeout, StorageService) {
 
-    var cards = StorageService.getAll();
+    // var cards = StorageService.getAll();
 
     $scope.cards = {
-      master: Array.prototype.slice.call(cards, 0),
-      active: Array.prototype.slice.call(cards, 0)
+      master: StorageService.master(),
+      active: StorageService.active()
     };
 
+    console.log(StorageService.active());
+
     $scope.cardDestroyed = function (index) {
-      $scope.cards.active.splice(index, 1);
+      var a = $scope.cards.active.splice(index, 1);
+      // StorageService.active(a);
+      StorageService.active($scope.cards.active);
+      console.log("StorageService.active(): " + StorageService.active());
       if ($scope.cards.active.length === 0)
         $scope.refreshCards();
+      console.log("a: " + a);
+      console.log("$scope.cards.active: " + $scope.cards.active);
     };
 
     $scope.$on('removeCard', function(event, element, card) {

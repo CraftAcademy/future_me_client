@@ -4,8 +4,7 @@
       <td-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)">
         <ion-header-bar class='bar-clear'>
           <div class="buttons">
-            <a class="button icon-left ion-chevron-left button-clear button-back" style="color: #ffffff;
-  opacity: 0.55;" go-click='/suggestions/{{card.id}}'></a>
+            <a class="button icon-left ion-chevron-left button-clear button-back" style="color: #ffffff;  opacity: 0.55;" go-click='/suggestions'></a>
           </div>
           <h1 class="title" style="color: #ffffff; opacity: 0.55;">Occupation Header</h1>
         </ion-header-bar>
