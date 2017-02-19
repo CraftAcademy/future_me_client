@@ -11,6 +11,7 @@ angular.module("futureme.directives", [])
       element.bind('click', function () {
         scope.$apply(function () {
           $location.path(path);
+          console.log($location.path(path));
         });
       });
     };

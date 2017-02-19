@@ -1,4 +1,4 @@
-/*td-cards*/
+/* Tindercards */
 
 td-cards {
   display: block;
@@ -99,57 +99,6 @@ td-card img {
   margin-top: 1rem;
 }
 
-/*buttons*/
-
-.button-dark {
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
-}
-
-.button-back {
-  margin-top: 0px;
-}
-
-.bar.bar-clear .button {
-  color: #595959;
-}
-
-.button-balanced {
-  border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.button-royal {
-  border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.25rem;
-}
-
-.button-positive {
-  border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.button-assertive {
-  border-radius: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-/*Suggestion screen */
-
 .pane {
   overflow: hidden;
   background-size: cover;
@@ -203,7 +152,7 @@ td-card img {
   text-align: center;
 }
 
-/*Libary screen*/
+/*Library screen*/
 
 .screen {
   overflow: hidden;
@@ -226,6 +175,62 @@ td-card img {
 
 .button.button-light {
   color: #fff;
+}
+
+/* Buttons */
+
+.button-dark {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.button-back {
+  margin-top: 0px;
+}
+
+.bar.bar-clear .button {
+  color: #595959;
+}
+
+.button-balanced {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.button-royal {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.button-positive {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.button-assertive {
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+/* Icons */
+
+.ion-heart, ion-information, ion-map, ion-close {
+  font-size: 1.2rem; !important;
+  color: white; !important;
 }
 
 

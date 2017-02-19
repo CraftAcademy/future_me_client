@@ -1,7 +1,7 @@
 // Ionic futureme App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// 'futureme' is the name of this angular module (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directives', 'futureme.services', 'ionic.contrib.ui.tinderCards2', 'ngStorage'])
 
@@ -45,8 +45,20 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
         controller: 'cardsCtrl'
       })
 
+      .state('suggestions.id', {
+        url: '/id',
+        templateUrl: 'templates/suggestions.html',
+        controller: 'cardsCtrl'
+      })
+
       .state('description', {
         url: '/description',
+        templateUrl: 'templates/description/description.html',
+        controller: 'descriptionCtrl'
+      })
+
+      .state('description.id', {
+        url: '/id',
         templateUrl: 'templates/description/description.html',
         controller: 'descriptionCtrl'
       })
@@ -63,5 +75,6 @@ angular.module('futureme', ['ionic', 'futureme.controllers', 'futureme.directive
         controller: 'pathCtrl'
       });
 
-    $urlRouterProvider.otherwise('/suggestions');
+    // $urlRouterProvider.otherwise('/suggestions');
+    $urlRouterProvider.otherwise('/description');
   });
