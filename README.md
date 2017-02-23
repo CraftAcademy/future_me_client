@@ -4,12 +4,6 @@ This is the final project for the Nov -16 cohort from Craft Academy Bootcamp.
 ### Pivotal Tracker
 [Pivotal](https://www.pivotaltracker.com/n/projects/1968195)
 
-### Build
-[add build status here]
-
-### Coverage
-[add coverage badge her]
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -20,15 +14,38 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-Fork the project. run npm install and bower install. 
+Fork and clone repository.
 
-## Running the tests
+```
+$ npm install && bower install.
+```
 
-[Add instructions to run test suite - if any, otherwise remove this section]
+## Running the application in browser
+
+```
+$ ionic serve --lab
+```
+
+## Upload to Ionic view application 
+
+Download ionic view from Google play/App store. link to download
+
+Sign in with credentials.
+
+Go to computers terminal,
+```
+$ ionic upload
+```
+
+Follow instructions in terminal, and when completed the latest changes will be uploaded in the ionic view application.
+
+## How to add/delete/edit occupations
+
+
 
 ## Built With
-
-  * [Travis](https://travis-ci.org) - Used for continous integration
+  * AngularJS
+  * Ionic Framework
   * [ionic-ion-tinder-cards-2](https://github.com/loringdodge/ionic-ion-tinder-cards-2) - Used for implementing the tinder cards functionality
   * [ng-Storage](https://github.com/gsklee/ngStorage) - Used for saving data in local storage, including occupations as default.
 
