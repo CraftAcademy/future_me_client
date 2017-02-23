@@ -16,7 +16,7 @@ angular.module("futureme.services", [])
           title_4: 'Arbetstider',
           description_4: 'Bagare på industribagerier arbetar ofta natt och helgarbete varannan helg eller liknande förekommer. Även skiftgång kan förekomma. Som bagare på ett litet bageri eller konditori börjar man oftast arbeta mycket tidigt på morgonen.',
           rating: '★★★★☆',
-          google: 'https://www.google.se/#q=hur+blir+man+bagare',
+          google: 'https://www.google.se/#q=vad+g%C3%B6r+bagare%3F&*?',
           path_steps: 'Bagare(transparent).png'
         },
         {
@@ -29,7 +29,7 @@ angular.module("futureme.services", [])
           title_3: 'Arbetsplatser',
           description_3: 'Sjuksköterskor kan arbeta inom landsting, kommun eller privat verksamhet. Exempel på arbetsplatser är sjukhus, kommunal äldrevård, vård och omsorg för funktionshindrade, vårdcentraler samt öppenvård.',
           rating: '★★★★☆',
-          google: 'https://www.google.se/#q=hur+blir+man+sjuksk%C3%B6terska',
+          google: 'https://www.google.se/#q=vad+g%C3%B6r+sjuksk%C3%B6terska%3F&*?',
           path_steps: 'Nurse(transparent).png'
         },
         {
@@ -42,7 +42,7 @@ angular.module("futureme.services", [])
           title_3: 'Arbetsplatser',
           description_3: 'Som möbeldesigner kan du jobba på möbelföretag, designbyråer, arkitektbyråer eller starta eget företag.',
           rating: '★★★☆☆',
-          google: 'https://www.google.se/#q=hur+blir+man+m%C3%B6beldesigner',
+          google: 'https://www.google.se/#q=vad+g%C3%B6r+m%C3%B6beldesigner%3F&*?',
           path_steps: 'FurnDesign(transparent).png'
         }
       ],
